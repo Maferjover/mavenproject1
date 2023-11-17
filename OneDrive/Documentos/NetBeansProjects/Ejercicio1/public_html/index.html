@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Formulario</title>
+	<link rel="stylesheet" type="text/css" href="formulario1.css">
+</head>
+<body>
+	<h1><u>Formulario</u></h1>
+<form action="formulario1.php" method="post">
+		Apellidos <input type="text" name="apellidos" maxlength="50"/><br>
+		Nombre <input type="text" name="nombre" maxlength="50"/><br>
+		Año de nacimiento <input type="number" name="año"/><br>
+		Fecha de alta <input type="date" name="alta"/><br>
+		Aficiones
+		<select name="selecciona">
+			<option>Elija una opción</option>
+			<option>Running</option>
+			<option>Natación</option>
+			<option>CrossFit</option>
+		</select>
+		<br>
+		Ciudades Favoritas
+		<input type="checkbox" name="ciudades0" value="Roma" class="ciudades" checked></input><br>
+		<input type="checkbox" name="ciudades1" value="Caracas" class="ciudades"></input><br>
+		<input type="checkbox" name="ciudades2" value="Madrid" class="ciudades"></input><br>
+		<label><input type="radio" name="sexo" value="Hombre" checked>Hombre</label><br>
+		<label><input type="radio" name="sexo" value="Mujer">Mujer</label><br>
+		<button type="submit" name="enviar">Enviar</button>
+		<button type="reset" name="borrar">Borrar</button>
+</form>
+</body>
